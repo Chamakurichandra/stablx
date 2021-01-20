@@ -1,38 +1,306 @@
-.App {
+.img{
+  background-image: url("./assert/landing.jpg");
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat; 
+  position: fixed;
+  z-index: 10;
+}
+.img::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0, 0.5);
+}
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.clg{
+  font-size: 1.4em;
+}
+.main{
+  margin: 7em;
+  z-index: 10;
+  position: relative;
+}
+.sub{
+  width: 60%;
+  margin: -4em auto;
+  border-radius: 3%;
+  box-shadow: 5px 5px 5px 5px gainsboro;
+  position: relative;
+  z-index:20;
+  background-color: white;
+  padding: 1em 0;
+  
+}
+.part-time{
+  text-align: center;
+  padding: 1em 0;
+  color: darkgoldenrod;
+  font-size: 1.5em;
+}
+html{
+  width: 100%;
+}
+.cls-3{
+  background-color:goldenrod;
+  width: 80%;
+  color: white;
+  margin:auto;
+  text-align: center;
+  padding: 0.2em;
+  margin: 3em auto;
+  font-size: 1.5em;
+}
+.cls-4{
+  width: 100%;
+  box-shadow:2px 5px 5px 2px gainsboro;
+  padding: 1em;
+}
+.mn{
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  padding: 2em 0;
+}
+
+.num{
+    font-size: 2em;
+    color:darkblue;
+    font-weight: bolder;
+}
+.en{
+  font-size: 1.4em;
+  opacity: 0.6;
+}
+.help{
+  text-align: center;
+  font-size: 2em;
+  color: darkblue;
+}
+.hr{
+  border:2px solid darkblue;
+  padding: 1px 1em;
+  width: 10%;
+  align-items: center;
+  margin: 1em auto;
+}
+.para{
+  width: 80%;
+  margin: auto;
+  padding: 2em 0;
+}
+.para-1{
+  font-size: 2em;
+  color:darkblue;
+  text-align: center;
+  margin: 5em 0 0 0;
+}
+.font{
+  color: yellow;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 2em 0;
+}
+.font i{
+  padding: 0.5em;
+}
+.hover:hover{
+  color: darkgoldenrod;
+  cursor: pointer;
+}
+.hover{
+  text-align: center;
+  color: darkblue;
+}
+.aply{
+  text-align: center;
+  padding: 3em 0;
+  
+}
+.course{
+  width: 90%;
+  margin: 3em auto;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animate{
+  border: 1px solid gainsboro;
+  background-color:gainsboro;
+  box-shadow: 2px 2px 2px 2px gainsboro;
+  border-radius: 10px;
+  margin: 0.5em 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bold{
+  font-weight: bolder;
 }
+.strike{
+  text-decoration: line-through red;
+  font-size: 2em;
+}
+.payment{
+  width: 50%;
+  margin: 4em auto;
+  text-align: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.pay{
+  box-shadow:  2px 2px 2px 2px gainsboro;
+  padding: 2em;
+  border-radius: 10px;
+  background-color:midnightblue;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.calendar{
+  width: 60%;
+  margin: auto;
 }
+.all{
+  background-color: ghostwhite;
+  padding: 1em;
+  color:darkblue;
+}
+.all-1{
+  border: 2px solid ghostwhite;
+  padding: 1em;
+  border-left: none;
+  border-right: none;
+}
+.details{
+  padding: 3em 0;
+  width: 80%;
+  margin: auto;
+}
+.details-1{
+  padding: 1em 0;
+  text-align: center;
+  border: 2px solid ghostwhite;
+}
+.about{
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+.abt{
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  padding: 1em ;
+}
+.bg{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 1.1em 0;
+  font-size: 2em;
+  margin: 0.2em;
+}
+.bg-1{
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 0.2em 0;
+  font-size: 4em;
+  margin: 0.1em;
+}
+.para-2{
+  padding: 2em 0;
+}
+.article{
+  color: darkblue;
+  text-align: right;
+}
+.inpt{
+  display:inline-flex;
+  padding: 2em 0 0 1em;
+  text-align: center;
+  align-items: center;
+ 
+}
+.inpt-value{
+  width: 80%;
+  margin: 2em auto;
+  background-color:orange;
+  border-radius: 10px;
+}
+.inpt-2{
+margin-left: 1em;
+}
+.inpt-1{
+  margin-right: 5em;
+  color: white;
+}
+.change:hover{
+    color: white;
+}
+.footer{
+  width: 80%;
+  margin: auto;
+}
+.foot{
+  background-color: gainsboro;
+  padding: 2em 0;
+}
+.hr-1{
+  padding: 1px;
+  border: 1px solid black;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 40%;
+}
+.web{
+  font-size: 2em;
+  color:darkblue;
+  padding: 1em;
+}
+.web-1{
+  padding:10px;
+}
+.copy-right{
+  
+  text-align: center;
+  color: goldenrod;
+  
+}
+.fonts{
+  font-size: 3em;
+}
+.opt{
+  font-size: 1.5em;
+  padding: 0.5em 0;
+}
+.card-1{
+  font-size: 2em;
+  padding:0 0 1.7em  0;
+}
+.card-2{
+  font-size: 2em;
+}
+@media (max-width: 991.98px){
+    .main{
+      margin: 4em 0 ;
+      padding-left: 2em;
+    } 
+    
+    .sub{
+      width: 100%;
+    }
+    body{
+      width: 100%;
+    }
+   
+}
+.heads{
+  z-index: 20;
+  position: relative;
+  margin: 6em 0;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
